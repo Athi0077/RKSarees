@@ -30,7 +30,7 @@ const slides = [
     id: 3,
     image: rkSareesImg,
     badge: '✦ DIRECT FROM WEAVERS',
-    title: 'RK SAREES ELAMPILLAI',
+    title: 'RK SAREES',
     subtitle: 'Wholesale & Retail | Salem, Tamil Nadu',
     description: 'Authentic manufacturer prices direct from the heart of Tamil Nadu handloom hub. Quality assured on every weave.',
     primaryBtn: { text: 'VIEW ALL DESIGNS', link: '/shopping' },
@@ -215,16 +215,24 @@ const HeroSlider = () => {
         {/* Contact Badge Pill (Glassmorphism) */}
         <div className="pointer-events-auto flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-[10px] sm:text-xs text-white/90 font-medium tracking-widest px-5 py-2 rounded-full border border-white/20 shadow-lg backdrop-blur-md bg-black/35">
           <a
-            href="tel:+919363008505"
+            href="tel:+918428256334"
             className="flex items-center gap-2 hover:text-[#f3e5ab] transition-colors"
           >
             <FiPhone className="w-3.5 h-3.5 text-[#c5a070]" />
-            +91 9363008505
+            +91 8428256334
+          </a>
+          <span className="hidden sm:inline-block w-px h-3.5 bg-white/25" />
+          <a
+            href="tel:+916380308150"
+            className="flex items-center gap-2 hover:text-[#f3e5ab] transition-colors"
+          >
+            <FiPhone className="w-3.5 h-3.5 text-[#c5a070]" />
+            +91 6380308150
           </a>
           <span className="hidden sm:inline-block w-px h-3.5 bg-white/25" />
           <span className="flex items-center gap-2">
             <FiMapPin className="w-3.5 h-3.5 text-[#c5a070]" />
-            ELAMPILLAI, SALEM
+            VEERANAM MAIN ROAD, SALEM - 636003
           </span>
         </div>
       </div>

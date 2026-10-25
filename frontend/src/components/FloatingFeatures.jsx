@@ -55,9 +55,9 @@ function FloatingFeatures() {
   };
 
   const openWhatsApp = () => {
-    const ADMIN_WHATSAPP = "";
+    const ADMIN_WHATSAPP = "918428256334";
     window.open(
-      `https://wa.me/${ADMIN_WHATSAPP}?text=Hello R.S Sarees, I have a query.`,
+      `https://wa.me/${ADMIN_WHATSAPP}?text=Hello RK Sarees, I have a query.`,
       "_blank"
     );
   };

@@ -15,7 +15,7 @@ function CartDrawer() {
   const totalPrice = cart.reduce((sum, item) => sum + ((item.sellingPrice || item.price) * item.quantity), 0);
 
   // Admin WhatsApp number - change this to your number
-  const ADMIN_WHATSAPP = '918056510875';
+  const ADMIN_WHATSAPP = '918428256334';
 
   const handleCheckout = async () => {
     const email = localStorage.getItem('userEmail');
