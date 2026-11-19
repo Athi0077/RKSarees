@@ -10,6 +10,7 @@ import ProductDetails from './pages/ProductDetails';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import AdminDashboard from './pages/AdminDashboard';
+import AdminBilling from './pages/AdminBilling';
 import AdminSarees from './pages/AdminSarees';
 import AdminBookings from './pages/AdminBookings';
 import Profile from './pages/Profile';
@@ -86,6 +87,7 @@ function App() {
       {/* Admin Routes with Admin Layout */}
       <Route path="/admin" element={<AdminLayout />}>
         <Route index element={<AdminDashboard />} />
+        <Route path="billing" element={<AdminBilling />} />
         <Route path="sarees" element={<AdminSarees />} />
         <Route path="bookings" element={<AdminBookings />} />
       </Route>

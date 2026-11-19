@@ -11,6 +11,7 @@ import productRoutes from './routes/productRoutes.js';
 import bookingRoutes from './routes/bookingRoutes.js';
 import adminRoutes from './routes/adminRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
+import billRoutes from './routes/billRoutes.js';
 
 dotenv.config();
 
@@ -22,7 +23,7 @@ app.set('trust proxy', 1);
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+  max: 500, // Allow high frequency operations for admin/pos billing
   message: { message: 'Too many requests from this IP, please try again after 15 minutes' },
   standardHeaders: true,
   legacyHeaders: false,
@@ -39,5 +40,6 @@ app.use('/api', productRoutes);
 app.use('/api', bookingRoutes);
 app.use('/api', adminRoutes);
 app.use('/api', uploadRoutes);
+app.use('/api', billRoutes);
 
 export default app;

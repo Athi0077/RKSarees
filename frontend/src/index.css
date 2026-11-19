@@ -27,3 +27,26 @@
   }
 }
 
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #pos-print-area, #pos-print-area * {
+    visibility: visible;
+  }
+  #pos-print-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: white !important;
+    color: black !important;
+    z-index: 99999999;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
