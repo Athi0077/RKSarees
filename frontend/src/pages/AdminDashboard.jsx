@@ -66,7 +66,7 @@ function AdminDashboard() {
       </div>
 
       {/* Stats Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         <div className="bg-white/70 backdrop-blur-md p-6 border border-white/50 rounded-xl shadow-sm text-center">
           <p className="text-4xl font-bold text-brand">{stats.totalOrders}</p>
           <h3 className="text-gray-600 font-medium mt-1">Total Orders</h3>
@@ -79,6 +79,11 @@ function AdminDashboard() {
           <p className="text-4xl font-bold text-purple-600">{stats.activeSarees}</p>
           <h3 className="text-gray-600 font-medium mt-1">Active Sarees</h3>
         </div>
+        <Link to="/admin/hero-slides" className="bg-white/70 hover:bg-white/90 backdrop-blur-md p-6 border border-amber-200/60 rounded-xl shadow-sm text-center transition hover:shadow-md flex flex-col justify-center items-center group">
+          <span className="text-3xl mb-1 group-hover:scale-110 transition-transform">🖼️</span>
+          <h3 className="text-gray-800 font-bold">Hero Banners</h3>
+          <span className="text-xs text-amber-700 font-medium mt-0.5">Edit Home Slider →</span>
+        </Link>
       </div>
 
       {/* Sales Chart */}

@@ -12,6 +12,7 @@ import bookingRoutes from './routes/bookingRoutes.js';
 import adminRoutes from './routes/adminRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
 import billRoutes from './routes/billRoutes.js';
+import heroSlideRoutes from './routes/heroSlideRoutes.js';
 
 dotenv.config();
 
@@ -41,5 +42,6 @@ app.use('/api', bookingRoutes);
 app.use('/api', adminRoutes);
 app.use('/api', uploadRoutes);
 app.use('/api', billRoutes);
+app.use('/api', heroSlideRoutes);
 
 export default app;

@@ -13,6 +13,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import AdminBilling from './pages/AdminBilling';
 import AdminSarees from './pages/AdminSarees';
 import AdminBookings from './pages/AdminBookings';
+import AdminHeroSlides from './pages/AdminHeroSlides';
 import Profile from './pages/Profile';
 import FloatingFeatures from './components/FloatingFeatures';
 import ScrollToTop from './components/ScrollToTop';
@@ -87,6 +88,7 @@ function App() {
       {/* Admin Routes with Admin Layout */}
       <Route path="/admin" element={<AdminLayout />}>
         <Route index element={<AdminDashboard />} />
+        <Route path="hero-slides" element={<AdminHeroSlides />} />
         <Route path="billing" element={<AdminBilling />} />
         <Route path="sarees" element={<AdminSarees />} />
         <Route path="bookings" element={<AdminBookings />} />

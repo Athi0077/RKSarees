@@ -34,6 +34,9 @@ function AdminLayout() {
               <Link to="/admin" className="text-sm font-medium hover:text-gray-300 transition-colors">
                 Dashboard
               </Link>
+              <Link to="/admin/hero-slides" className="text-sm font-medium hover:text-gray-300 transition-colors">
+                Hero Banners
+              </Link>
               <Link to="/admin/billing" className="text-sm font-medium text-amber-300 hover:text-white transition-colors bg-white/10 px-3 py-1 rounded-md flex items-center gap-1.5">
                 Billing (POS)
               </Link>
@@ -69,6 +72,9 @@ function AdminLayout() {
             <div className="px-4 pt-2 pb-6 space-y-2 flex flex-col">
               <Link onClick={() => setIsMobileMenuOpen(false)} to="/admin" className="block px-3 py-3 text-base font-medium text-white hover:bg-gray-800 rounded-md">
                 Dashboard
+              </Link>
+              <Link onClick={() => setIsMobileMenuOpen(false)} to="/admin/hero-slides" className="block px-3 py-3 text-base font-medium text-white hover:bg-gray-800 rounded-md">
+                Hero Banners
               </Link>
               <Link onClick={() => setIsMobileMenuOpen(false)} to="/admin/billing" className="block px-3 py-3 text-base font-medium text-amber-300 hover:bg-gray-800 rounded-md">
                 Billing (POS)
